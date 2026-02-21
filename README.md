@@ -1,12 +1,12 @@
-# ts-foundry
+# tgbot-foundry
 
-A TypeScript project template with [Bun](https://bun.com), [tsup](https://github.com/egoist/tsup), [Vitest](https://vitest.dev), and [Biome](https://biomejs.dev).
+A Telegram bot project with [Bun](https://bun.com), [Vitest](https://vitest.dev), and [Biome](https://biomejs.dev).
 
 ## Clone the Repository
 
 ```bash
-git clone git@github.com:outofgas-build/ts-foundry.git
-cd ts-foundry
+git clone git@github.com:outofgas-build/tgbot-foundry.git
+cd tgbot-foundry
 ```
 
 ## Create a New Project from This Template
@@ -14,7 +14,7 @@ cd ts-foundry
 1. Clone the repository:
 
    ```bash
-   git clone git@github.com:outofgas-build/ts-foundry.git my-project
+   git clone git@github.com:outofgas-build/tgbot-foundry.git my-project
    cd my-project
    ```
 
@@ -38,8 +38,7 @@ cd ts-foundry
 ## Scripts
 
 ```bash
-bun run build       # Build with tsup
-bun run dev         # Build in watch mode
+bun run start       # Start the bot with bun
 bun run test        # Run tests with coverage
 bun run test:watch  # Run tests in watch mode
 bun run lint        # Lint with Biome

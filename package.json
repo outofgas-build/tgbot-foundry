@@ -1,21 +1,10 @@
 {
-  "name": "ts-foundry",
+  "name": "tgbot-foundry",
   "version": "0.1.0",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "sideEffects": false,
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "start": "bun run src/app.ts",
+    "dev": "bun --watch src/app.ts",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "lint": "biome check .",
@@ -25,10 +14,13 @@
     "@biomejs/biome": "^2.3.15",
     "@types/bun": "latest",
     "@vitest/coverage-v8": "^4.0.18",
-    "tsup": "^8.5.1",
     "vitest": "^4.0.18"
   },
   "peerDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "grammy": "^1.40.0"
   }
 }
