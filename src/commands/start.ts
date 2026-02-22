@@ -6,7 +6,7 @@ export const startAction = async (ctx: CommandContext<Context>) => {
     if (!ctx.from) return;
     const user = await prisma.user.create({
       data: {
-        telegram_user_id: BigInt(ctx.from.id),
+        telegramUserId: BigInt(ctx.from.id),
       },
     });
     console.log(
